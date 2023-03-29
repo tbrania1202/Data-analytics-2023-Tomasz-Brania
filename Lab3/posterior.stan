@@ -8,7 +8,7 @@ parameters{
 }
 
 model {
-    p ~ normal(0, 1);
+    p ~ beta(2, 8);
     y ~ binomial(N, p);
 }
 
